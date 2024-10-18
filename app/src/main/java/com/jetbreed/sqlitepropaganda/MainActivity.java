@@ -62,7 +62,11 @@ public class MainActivity extends AppCompatActivity {
 
         databaseAccessModifier = new DatabaseAccessModifier(this);
 
-        arrayAdapter = new ArrayAdapter<MoviewReview>(MainActivity.this, android.R.layout.simple_list_item_1, databaseAccessModifier.getResultList());
+        arrayAdapter
+                = new ArrayAdapter<MoviewReview>(MainActivity.this,
+                android.R.layout.simple_list_item_1,
+                databaseAccessModifier.getResultList());
+
         listView.setAdapter(arrayAdapter);
 
         btnSave.setOnClickListener(view -> {
