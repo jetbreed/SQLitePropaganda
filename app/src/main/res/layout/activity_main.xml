@@ -92,7 +92,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="true"
-                android:theme="@style/AppTheme"
+                android:theme="@style/Theme.AppCompat"
                 android:rating="4"
                 android:numStars="5"
                 android:inputType="textPersonName"
@@ -143,19 +143,19 @@
                     android:textSize="20sp"
                     />
 
-                <RadioButton
-                    android:id="@+id/reactMovie"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="React Movie"
-                    android:textSize="20sp" />
-
                 <View
                     android:id="@+id/divider"
                     android:layout_width="match_parent"
                     android:layout_height="11dp"
                     android:background="?android:attr/listDivider" />
 
+
+                <RadioButton
+                    android:id="@+id/reactMovie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="React Movie"
+                    android:textSize="20sp" />
 
                 <CheckBox
                     android:id="@+id/mssqlMovie"
